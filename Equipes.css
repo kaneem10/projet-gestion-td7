@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Champions-Bold';
+  background-image: url('https://img.goodfon.com/original/1920x1080/d/f3/uefa-champions-league-ucl.jpg');
+  color: rgba(17, 32, 73);
+  padding-top: 1%;
+  width: 100%;
+  overflow-x: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+main {
+  margin-top: 100px;
+}
+
+[id] {
+  scroll-margin-top: 100px;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px auto 30px;
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  background-color: (17, 32, 73,0.6)
+}
+
+
+.team {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 25px auto;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-left: 8px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+
+.team:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Titre + logo */
+.team h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.team-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+/* Couleurs de bordures personnalisées */
+.team.arsenal      { border-left-color: #ef0107; }
+.team.realmadrid   { border-left-color: #febd11; }
+.team.psg          { border-left-color: #004170; }
+.team.bayern       { border-left-color: #dc052d; }
+.team.barcelona    { border-left-color: #a50044; }
+.team.dortmund     { border-left-color: #fef102; }
+.team.inter        { border-left-color: #1d428a; }
+.team.astonvilla   { border-left-color: #95bfe5; }
+
+/* Joueurs */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* Image joueur */
+li img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid rgba(17, 32, 73);
+  transition: transform 0.2s ease;
+}
+
+li img:hover {
+  transform: scale(1.1);
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(17, 32, 73);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+.nav-links li a:focus {
+  outline: 2px dashed #fff;
+  outline-offset: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  body {
+    padding: 10px;
+    padding-top: 100px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 8px 0;
+  }
+
+  .team {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  li {
+    font-size: 15px;
+  }
+
+  li img {
+    width: 40px;
+    height: 40px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .team h2 {
+    font-size: 20px;
+  }
+
+  .team-logo {
+    width: 28px;
+    height: 28px;
+  }
+}
+@font-face {
+  font-family: 'Champions-Bold';
+  src: url('Champions-Bold.ttf') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
