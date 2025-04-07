@@ -129,4 +129,10 @@
     font-weight: bold;
     font-style: normal;
   }
-  
+body.utilisateur .btn.disabled {
+  background-color: grey;
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+  text-align: center;
+}
