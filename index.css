@@ -8,7 +8,13 @@
   html {
     scroll-behavior: smooth;
   }
-  
+  body.utilisateur a {
+  pointer-events: none;
+  color: grey;
+  text-decoration: none;
+  cursor: not-allowed;
+}
+
   body {
     font-family: 'Champions-Bold';
     background-image: url('https://img.goodfon.com/original/1920x1080/d/f3/uefa-champions-league-ucl.jpg');
